@@ -1,0 +1,42 @@
+.el-select .el-input.is-focus .el-input__wrapper {
+  box-shadow: none;
+}
+
+.el-select:hover:not(.el-select--disabled) .el-input__wrapper {
+  box-shadow: none;
+}
+
+.lang {
+  align-self: flex-end;
+}
+.lang .el-input {
+  width: 67px;
+  height: 20px;
+}
+.lang .el-input__wrapper {
+  box-shadow: none;
+  padding: 0;
+  flex-direction: row-reverse;
+}
+.lang .el-input__wrapper:hover {
+  box-shadow: none;
+}
+.lang .el-input__inner {
+  color: #78708f;
+  text-align: center;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 16px; /* 114.286% */
+}
+.lang .el-input__suffix {
+  width: 16px;
+  height: 16px;
+}
+.lang .el-input__suffix-inner {
+  width: 100%;
+  height: 100%;
+}
+.lang .el-input__suffix-inner i {
+  margin: 0;
+}/*# sourceMappingURL=lang-change.css.map */

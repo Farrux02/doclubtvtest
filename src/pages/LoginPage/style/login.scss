@@ -1,0 +1,117 @@
+.auth {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  max-height: 100vh;
+  height: 100%;
+  overflow: hidden;
+  &__left {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 30px;
+    max-height: 100vh;
+    height: 100%;
+    position: relative;
+    &__content {
+      max-width: 370px;
+      flex: 1 1 auto;
+    }
+  }
+  &__right {
+    max-height: 100vh;
+    height: 100%;
+    width: 100%;
+    img {
+      width: 100%;
+      max-height: 100vh;
+      height: 100%;
+    }
+  }
+  &__logo {
+    color: #000;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 28px;
+  }
+  &__heading {
+    color: #000;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 44px;
+    margin: 32px 0;
+    p {
+      color: var(--purple);
+    }
+  }
+
+  .el-dialog {
+    max-width: 770px;
+    border-radius: 12px;
+    background: #fff;
+    padding: 40px;
+    &__header {
+      color: #413663;
+      font-size: 24px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 28px;
+      padding: 0;
+    }
+    &__body {
+      padding: 0;
+      margin: 32px 0;
+      ol {
+        color: #78708f;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 20px;
+        display: flex;
+        flex-direction: column;
+        row-gap: 20px;
+        padding-left: 20px;
+        li {
+          list-style: auto;
+        }
+      }
+    }
+    &__footer {
+      padding: 0;
+      text-align: start;
+      display: flex;
+      column-gap: 24px;
+      align-items: center;
+      a {
+        display: inline-flex;
+        align-items: center;
+        column-gap: 12px;
+        color: #968fa9;
+        text-align: center;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 20px;
+      }
+    }
+  }
+}
+
+
+@media (max-width: 500px) {
+  .auth{
+    display: block;
+    &__right {
+      display: none;
+    }
+  }
+}
+
+@media (max-width: 380px) {
+  .auth__left__content {
+    max-width: 320px;
+    margin: 0 auto;
+    padding: 30px 0;
+  }
+}

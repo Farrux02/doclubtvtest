@@ -1,0 +1,100 @@
+.rating {
+  padding: 32px;
+  border-radius: 16px;
+  border: 1px solid #e5e5f8;
+  .el-tabs--card > .el-tabs__header,
+  .el-tabs--card > .el-tabs__header .el-tabs__nav,
+  .el-tabs--card > .el-tabs__header .el-tabs__item {
+    border: none;
+  }
+  .el-tabs {
+    &__nav {
+      width: 100%;
+      border: none;
+      column-gap: 16px;
+    }
+    &__header {
+      margin-bottom: 28px;
+    }
+    &__item {
+      border-radius: 12px;
+      background: #f4f4f9;
+      color: #968fa9;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 20px;
+      &.is-active {
+        color: #7646ff;
+        background-color: #f1ecff;
+      }
+    }
+  }
+  &__list {
+    display: flex;
+    flex-direction: column;
+    row-gap: 12px;
+    &_item {
+      display: flex;
+      column-gap: 16px;
+      align-items: center;
+      &__order {
+        color: #78708f;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 24px;
+      }
+      &__img {
+        width: 40px;
+        height: 40px;
+        object-fit: contain;
+      }
+      &__name {
+        color: #413663;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 20px;
+        &--me {
+          font-size: 16px;
+          font-weight: 600;
+        }
+      }
+      &__info {
+        color: #78708f;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 16px;
+      }
+      &__text_wrapper {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+      }
+    }
+  }
+  &__footer {
+    margin-top: 28px;
+    &__btn {
+      padding: 10px 20px;
+      border-radius: 12px;
+      border: 1px solid #e5e5f8;
+      color: #413663;
+      text-align: center;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 20px;
+      background-color: #fff;
+      cursor: pointer;
+    }
+  }
+}
+
+@media (max-width: 500px) {
+  .rating {
+    margin-top: 20px;
+  }
+}

@@ -1,0 +1,101 @@
+.rating {
+  padding: 32px;
+  border-radius: 16px;
+  border: 1px solid #e5e5f8;
+}
+.rating .el-tabs--card > .el-tabs__header,
+.rating .el-tabs--card > .el-tabs__header .el-tabs__nav,
+.rating .el-tabs--card > .el-tabs__header .el-tabs__item {
+  border: none;
+}
+.rating .el-tabs__nav {
+  width: 100%;
+  border: none;
+  -moz-column-gap: 16px;
+       column-gap: 16px;
+}
+.rating .el-tabs__header {
+  margin-bottom: 28px;
+}
+.rating .el-tabs__item {
+  border-radius: 12px;
+  background: #f4f4f9;
+  color: #968fa9;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+}
+.rating .el-tabs__item.is-active {
+  color: #7646ff;
+  background-color: #f1ecff;
+}
+.rating__list {
+  display: flex;
+  flex-direction: column;
+  row-gap: 12px;
+}
+.rating__list_item {
+  display: flex;
+  -moz-column-gap: 16px;
+       column-gap: 16px;
+  align-items: center;
+}
+.rating__list_item__order {
+  color: #78708f;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+}
+.rating__list_item__img {
+  width: 40px;
+  height: 40px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.rating__list_item__name {
+  color: #413663;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+}
+.rating__list_item__name--me {
+  font-size: 16px;
+  font-weight: 600;
+}
+.rating__list_item__info {
+  color: #78708f;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 16px;
+}
+.rating__list_item__text_wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.rating__footer {
+  margin-top: 28px;
+}
+.rating__footer__btn {
+  padding: 10px 20px;
+  border-radius: 12px;
+  border: 1px solid #e5e5f8;
+  color: #413663;
+  text-align: center;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+  background-color: #fff;
+  cursor: pointer;
+}
+
+@media (max-width: 500px) {
+  .rating {
+    margin-top: 20px;
+  }
+}/*# sourceMappingURL=rating.css.map */

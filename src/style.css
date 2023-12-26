@@ -1,0 +1,44 @@
+:root {
+  --purple: #7646ff;
+}
+
+* {
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+button {
+  outline: none;
+  border: none;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Для Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+#app {
+  height: 100vh;
+}
+
+.content {
+  position: absolute;
+  left: 266px;
+  padding: 32px 0 0 60px;
+}
+
+@media (max-width: 500px) {
+  .content {
+    position: static;
+    padding: 32px;
+  }
+}
