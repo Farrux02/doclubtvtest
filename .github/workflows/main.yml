@@ -4,9 +4,7 @@ on:
   push:
     branches:
       - master
-  pull_requests:
-    branches:
-      - master
+
 jobs:
   build_and_deploy:
     runs-on: ubuntu-latest
